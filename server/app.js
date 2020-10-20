@@ -4,9 +4,9 @@ let express = require('express');
 let app = express();
 let log = require('./controllers/logcontroller');
 let user = require('./controllers/usercontroller');
-const sequalize = require('./db');
+let sequelize = require('./db');
 
-sequalize.sync();
+sequelize.sync();
 app.use(express.json());
 app.use(require('./middleware/headers'));
 app.use(require('./middleware/validate-sessions'));

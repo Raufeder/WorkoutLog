@@ -7,7 +7,7 @@ const sequelize = new Sequelize('workoutlog', 'postgres', 'Letmeow1234!', {
 
 sequelize.authenticate().then(
     function() {
-        console.log('Connected to workoutlog postgres database');
+        console.log('Connected to WorkoutLog postgres database');
     },
     function(err){
         console.log(err);
