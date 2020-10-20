@@ -5,9 +5,6 @@ let User = sequelize.import('../models/user');
 let bcrypt = require('bcryptjs');
 let jwt = require('jsonwebtoken');
 
-/*******************************************
- ** Create User Endpoint: Starter**
-*******************************************/
 
 router.post('/user/register', function (req, res) {
     let username = req.body.user.username;
